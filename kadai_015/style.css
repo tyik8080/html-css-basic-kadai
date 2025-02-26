@@ -1,0 +1,48 @@
+/* ルート要素のフォントサイズ */
+:root {
+    font-size: 20px;
+  }
+  
+  /* body のフォント設定と中央寄せ */
+  body {
+    font-family: "Arial", "Meiryo", sans-serif;
+    text-align: center;
+  }
+  
+  /* h1 の装飾 */
+  h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem; /* ルート要素の2倍 */
+    letter-spacing: 1.2em; /* 文字間 */
+    text-shadow: 2px 2px 5px gray; /* 影の追加 */
+    border-bottom: 3px solid rgb(115, 115, 114);
+  }
+  
+  /* 色の指定 */
+  .blue {
+    color: skyblue;
+  }
+  .pink {
+    color: rgb(255, 192, 203);
+  }
+  
+  /* h2のスタイル */
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  /* 「名前」「血液型」「好きな食べ物」の見出しをピンクに */
+  .pink {
+    color: rgb(255, 192, 203);
+  }
+  
+  /* 「生年月日」「趣味」「プログラミングを始めた理由」の見出しをスカイブルーに */
+  .blue {
+    color: skyblue;
+  }
+  
+  /* id属性basicのdiv内のp要素を太字に */
+  #basic p {
+    font-weight: bold;
+  }
+  
