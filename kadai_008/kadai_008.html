@@ -14,8 +14,9 @@
                 <a href="https://www.sejuku.net/">経済</a>
                 <a href="https://www.sejuku.net/">スポーツ</a>
                 <a href="https://www.sejuku.net/">テクノロジー</a>
-              </nav> 
+            </nav> 
         </header>
+
         <main>
             <article>
                 <section>
@@ -24,15 +25,14 @@
                     <p>日本でも年々人気の高まるハロウィン。<br>今年は大手和菓子店5社がハロウィン向けの和菓子セットを共同開発しました。</p>
                     <audio src="ichi.mp3" controls></audio> 
                 </section>
-        
+
                 <section>
                     <h3>私のおすすめ和菓子アンケートフォーム</h3>
-        
                     <form>
                         <label>氏名</label>
                         <input type="text" placeholder="名前を入力してください">
                         <br>
-        
+
                         <label>年代</label> 
                         <select>
                             <option>10代以下</option> 
@@ -41,41 +41,40 @@
                             <option>40代以上</option> 
                         </select>
                         <br> 
-        
+
                         <label>性別</label> 
                         <label>男性</label><input type="radio" name="gender"> 
                         <label>女性</label><input type="radio" name="gender"> 
                         <label>その他</label><input type="radio" name="gender"> 
                         <br> 
-        
+
                         <label>おすすめ和菓子の名称</label>
                         <input type="text" placeholder="例:みたらし団子">
                         <br>
-        
+
                         <label>おすすめする理由</label> 
                         <textarea></textarea> 
                         <br>
-        
+
                         <label>個人情報保護方針に同意する</label>
                         <input type="checkbox">
                         <br>
-        
+
                         <input type="submit" value="送信"> 
                         <input type="reset" value="リセット">
                         <br>
                     </form>
                 </section>
-            </article> 
-        </main>
-            <section>
-                <h2>テクノロジー</h2>
-                <h3>SAMURAIが新しい動画をリリース</h3>
-                <p>SAMURAI公式YouTubeで新しい動画がリリースされました。<br>動画の内容はHTML/CSS　の解説です。</p>
-                <br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2JLiGSUohEo?si=G_-tvzSlCUFUHOTr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </header>
-            </section>
-        </article>
-            </main>
+
+                <!-- 修正: テクノロジーのセクションを article の内側に移動 -->
+                <section>
+                    <h2>テクノロジー</h2>
+                    <h3>SAMURAIが新しい動画をリリース</h3>
+                    <p>SAMURAI公式YouTubeで新しい動画がリリースされました。<br>動画の内容はHTML/CSSの解説です。</p>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2JLiGSUohEo?si=G_-tvzSlCUFUHOTr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>
+            </article> <!-- 修正: article タグを適切な位置で閉じる -->
+        </main> <!-- 修正: 不要な main タグ閉じを削除 -->
     </body>
 </html>
-
