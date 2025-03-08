@@ -1,26 +1,89 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <meta name="description" content="このページは18章の課題です。">
-  <title>18章課題</title>
-</head>
-<body>
-  <div id="top">
-    <p class="top-child">sample</p>
-    <p class="top-child">sample</p>
-    <p class="top-child">sample</p>
-  </div>
-  <div id="middle">
-    <div id="middle-child01"></div>
-    <div id="middle-child02"></div>
-    <div id="middle-child03"></div>
-  </div>
-  <div id="bottom">
-    <div id="bottom-child01"></div>
-    <div id="bottom-child02"></div>
-    <div id="bottom-child03"></div>
-  </div>
-</body>
-</html>
+/* #top のデザイン設定 */
+#top {
+  width: 800px; /* 横幅800px */
+  background-color: #dcc9f4; /* 背景色 */
+  margin: 20px auto; /* 上下20pxの余白をつけ、中央揃え */
+  display: flex; /* 横並びにする */
+  justify-content: center; /* 子要素（p）の中央揃え */
+  align-items: center; /* 縦方向の中央揃え */
+  padding: 20px 0; /* 上下に余白をつける */
+}
+
+/* .top-child のデザイン設定 */
+.top-child {
+  width: 20%; /* 親要素の20%の幅 */
+  background-color: #ffd9df; /* 背景色 */
+  text-align: center; /* テキストを中央揃え */
+  padding: 10px; /* 余白を追加 */
+  margin: 0 10px; /* 各要素の間に余白 */
+}
+
+/* #middle のデザイン設定 */
+#middle {
+  width: 800px; /* 横幅800px */
+  height: 800px; /* 高さ800px */
+  background-color: #ffd9df; /* 背景色 */
+  margin: 0 auto 20px; /* 上の余白は相殺されるので、下20px */
+  position: relative; /* 子要素の絶対配置の基準にする */
+}
+
+/* middle の子要素の共通スタイル */
+#middle-child01,
+#middle-child02,
+#middle-child03 {
+  width: 200px; /* 横幅200px */
+  height: 200px; /* 高さ200px */
+  background-color: #87ceeb; /* 背景色 */
+  position: absolute; /* 親要素 #middle を基準に位置を指定 */
+}
+
+/* それぞれの子要素の位置指定 */
+#middle-child01 {
+  top: 100px; /* 上から100px */
+  left: 100px; /* 左から100px */
+}
+
+#middle-child02 {
+  top: 300px; /* 上から300px */
+  left: 300px; /* 左から300px */
+}
+
+#middle-child03 {
+  top: 500px; /* 上から500px */
+  left: 500px; /* 左から500px */
+}
+
+/* #bottom のデザイン設定 */
+#bottom {
+  width: 800px; /* 横幅800px */
+  height: 300px; /* 高さ300px */
+  background-color: #87ceeb; /* 背景色 */
+  margin: 0 auto; /* 画面の中央に配置 */
+  position: relative; /* 子要素の基準にする */
+}
+
+/* bottom の子要素の共通スタイル */
+#bottom-child01,
+#bottom-child02,
+#bottom-child03 {
+  width: 400px; /* 横幅400px */
+  height: 100px; /* 高さ100px */
+  background-color: #e5dcf0; /* 背景色 */
+  position: absolute; /* 配置を調整するために absolute を指定 */
+}
+
+/* 各子要素の位置指定 */
+#bottom-child01 {
+  top: 0;
+  left: 0; /* 右端に配置 */
+}
+
+#bottom-child02 {
+  top: 100px;
+  left: 200px; /* 本来の位置から 200px 左へ */
+}
+
+#bottom-child03 {
+  top: 200px;
+  left: 400px; /* 本来の位置から 400px 左へ */
+}
